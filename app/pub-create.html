@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/responsive-tabs.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.css">
+    <link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Piar</title>
+</head>
+<body>
+
+<header>
+    <div class="container big">
+        <div class="header-wrap flex-cont align-center justify-sb">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="logo">
+            </a>
+            <a href="#" class="header-nav">Кампании</a>
+            <a href="#" class="header-nav">Помощь</a>
+            <a href="#" class="header-nav create-company">Создать кампанию</a>
+            <a href="#" class="header-nav flex-cont align-center">
+                <p>Ваш баланс <span class="val-bal">(0.00 руб)</span></p>
+                <div class="dop-balance">
+                    <span>+</span>
+                </div>
+            </a>
+            <div class="person-login flex-cont align-center">
+                <span class="login">musuy2e@nickriz</span>
+                <i class="fas fa-arrow-down"></i>
+                <div class="dropdown-person">
+                    <div class="wrap">
+                        <a href="#">Настройки</a>
+                        <a href="#">Выход</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <section class="link-your-video">
+        <div class="container">
+            <div class="link-video">
+                <input class="link-v" id="linkVideo" type="text" placeholder="Ссылка на ваше видео (YouTube, Vimeo)">
+            </div>
+            <div class="name-video" title="Нажмите, если хотите изменить название кампании">
+                <input type="text">
+            </div>
+        </div>
+    </section>
+    <section class="option-screen">
+        <div class="container">
+            <div id="createTab">
+                <ul class="flex-cont justify-sb">
+                    <li>
+                        <a href="#tab-1" class="flex-cont align-center">
+                            <i class="fab fa-youtube"></i>
+                            <div class="tab-text">
+                                <span>Без доп. опций</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tab-2" class="flex-cont align-center">
+                            <i class="fas fa-users"></i>
+                            <div class="tab-text">
+                                <span>Подписчики на канал</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tab-3" class="flex-cont align-center">
+                            <i class="fas fa-share-alt"></i>
+                            <div class="tab-text">
+                                <span>Шейринг в соц. сети</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#tab-4" class="flex-cont align-center">
+                            <i class="fas fa-pencil-alt"></i>
+                            <div class="tab-text">
+                                <span>Пользовательская кнопка</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="more-options" id="tab-1">
+                    <div class="tabs-wrapper">
+                        <div class="video">
+                            <div class="thumb-wrap">
+                                <img class="zaglushka" src="img/zaglushka.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="followers" id="tab-2">
+                    <div class="tabs-wrapper">
+                        <div class="video">
+                            <div class="thumb-wrap">
+                                <img class="zaglushka" src="img/zaglushka.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="cont-card">
+                                <div class="name-card">
+                                    <span>Комментарий</span>
+                                </div>
+                                <textarea placeholder="Подписывайтесь на канал"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sharng" id="tab-3">
+                    <div class="tabs-wrapper">
+                        <div class="video">
+                            <div class="thumb-wrap">
+                                <img class="zaglushka" src="img/zaglushka.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="cont-card">
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkbox__text">Вконтакте</span>
+                                </label>
+                            </div>
+                            <div class="cont-card">
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkbox__text">Одноклассники</span>
+                                </label>
+                            </div>
+                            <div class="cont-card">
+                                <label class="checkbox">
+                                    <input type="checkbox">
+                                    <span class="checkbox__text">Facebook</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user-btn" id="tab-4">
+                    <div class="tabs-wrapper">
+                        <div class="video">
+                            <div class="thumb-wrap">
+                                <img class="zaglushka" src="img/zaglushka.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="cont-card">
+                                <div class="name-card">
+                                    <span>Адрес ссылки *</span>
+                                </div>
+                                <input type="text">
+                            </div>
+                            <div class="cont-card">
+                                <div class="name-card">
+                                    <span>Текст на кнопке *</span>
+                                </div>
+                                <input type="text">
+                            </div>
+                            <div class="cont-card">
+                                <div class="name-card">
+                                    <span>Описание</span>
+                                </div>
+                                <textarea></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="view">
+        <div class="container">
+            <div class="view-info flex-cont align-center justify-sb">
+                <div class="view-val">
+                    <p>Просмотры: <span class="view-val-num">500</span></p>
+                </div>
+                <div class="sale-view">
+                    <p><span>0,80</span> руб за просмотр</p>
+                </div>
+            </div>
+            <input type="text" id="views" name="views" value="" />
+        </div>
+    </section>
+    <section class="desc-for-video">
+        <div class="container">
+            <div class="desc-title flex-cont align-center">
+                <span>Добавить описание кампании</span>
+                <div class="t-arrow">
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+                <div class="dop-val">
+                    <p>+ 10 коп</p>
+                </div>
+            </div>
+            <div class="desc-notif">
+                <p>Текст описания будет размещен над или под плеером</p>
+            </div>
+            <textarea id="desc-area"></textarea>
+        </div>
+    </section>
+    <section class="sum-view">
+        <div class="container">
+            <p><span class="view-val-num">500</span> Просмотров за <span class="sum-rub">400 руб</span></p>
+        </div>
+    </section>
+    <section class="go-btn">
+        <div class="container flex-cont justify-sb align-center">
+            <div class="fast-start">
+                <a href="#" class="btn btn-fast">Быстрый запуск кампании</a>
+                <div class="desc-btn">
+                    <p>Мы уже выбрали оптимальные настройки, чтобы Вы получили
+                        самую выгодную цену просмотра</p>
+                </div>
+            </div>
+            <div class="target">
+                <a href="#" class="btn btn-target">Установить таргетинг</a>
+                <div class="desc-btn">
+                    <p>Вы можете выбрать нужные страны, города, возраст,
+                        пол, форматы и площадки</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="top-footer flex-cont align-center justify-sb">
+            <a href="#" class="logo">
+                <img src="img/logo-w.png" alt="">
+            </a>
+            <nav class="footer-nav">
+                <a href="#">О Нас</a>
+                <a href="#">Программа</a>
+                <a href="#">Контакты</a>
+            </nav>
+        </div>
+        <div class="center-footer flex-cont justify-sb">
+            <div class="info-company">
+                <p>Our company expends the scope its activitis, the scale of business activitis, the scale of
+                    business</p>
+                <p>Effects of magnet - active effect</p>
+            </div>
+            <div class="contacts">
+                <div class="contacts-card flex-cont align-center">
+                    <div class="contacts-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contacts-content">
+                        <div class="contacts-info">
+                            <span>+380 91 48 23 577</span>
+                        </div>
+                        <div class="contacts-desc">
+                            <span>Call us for free consulting</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contacts-card flex-cont align-center">
+                    <div class="contacts-icon">
+                        <i class="far fa-hand-paper"></i>
+                    </div>
+                    <div class="contacts-content">
+                        <div class="contacts-info">
+                            <span>support@chtototam.com</span>
+                        </div>
+                        <div class="contacts-desc">
+                            <span>Want to say hi?</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info-company">
+                <p>CA 91234 Riverwood Drive Street <br> Suite 3232 Cottowood</p>
+            </div>
+        </div>
+        <div class="bottom-footer flex-cont justify-sb align-center">
+            <div class="author">
+                <p>© 2011–2018 PiarVideo</p>
+            </div>
+            <nav class="soc-nav flex-cont align-center">
+                <a href="#">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </nav>
+        </div>
+    </div>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/jquery.responsiveTabs.min.js"></script>
+<script src="js/ion.rangeSlider.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

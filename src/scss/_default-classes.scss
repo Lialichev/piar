@@ -1,0 +1,35 @@
+.container{
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+
+  &.big {
+    max-width: 1920px;
+  }
+}
+
+.flex-cont{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.justify-sb{
+  justify-content: space-between;
+}
+
+.justify-sa{
+  justify-content: space-around;
+}
+
+.justify-c{
+  justify-content: center;
+}
+
+.align-center{
+  align-items: center;
+}
+
+.vertical-middle{
+  vertical-align: middle;
+}
