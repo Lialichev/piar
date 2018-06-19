@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     // Partners
     var partner = new Swiper('.swiper-partner', {
         loop: true,
@@ -161,5 +162,8 @@ $(document).ready(function () {
     $('.categories .title-sec').on('click', function () {
        $('.show-cat').toggleClass('active');
     });
+
+    // Loader Page
+    $('#loading').fadeOut(500);
 
 });
