@@ -1,1 +1,1 @@
-"# To run the project you need: ***npm install***"
+To run the project you need: ***npm install***
