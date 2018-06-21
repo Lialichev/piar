@@ -24,9 +24,9 @@ $(document).ready(function () {
     }
 
     // link video
-    $('.link-v').on('keyup change', function () {
+    $('.link-v').on('keyup', function () {
         if ($(this).val().length >= 1) {
-            createVideo ($(this).val());
+            createVideo($(this).val());
         } else {
             $('.thumb-wrap').html('<img class="zaglushka" src="img/zaglushka.png" alt="">');
             $('.name-video').removeClass('active');
@@ -34,7 +34,7 @@ $(document).ready(function () {
         }
     });
 
-    function parseVideo (url) {
+    function parseVideo(url) {
 
         var regExpVimeo = (/^.*(vimeo\.com\/)((channels\/[A-z]+\/)|(groups\/[A-z]+\/videos\/))?([0-9]+)/);
         var regExpYoutube = /^.*((youtu.be\/)|(v\/)|(\/u\/\w\/)|(embed\/)|(watch\?))\??v?=?([^#\&\?]*).*/;
@@ -59,13 +59,13 @@ $(document).ready(function () {
         return videoData
     }
 
-    function createVideo (url) {
+    function createVideo(url) {
         var videoObj = parseVideo(url);
         if (videoObj.type === 'youtube') {
-            $('.thumb-wrap').html('<iframe src="https://www.youtube.com/embed/' + videoObj.id +'" frameborder="0"></iframe>').addClass('active');
+            $('.thumb-wrap').html('<iframe src="https://www.youtube.com/embed/' + videoObj.id + '" frameborder="0"></iframe>').addClass('active');
             videoTitleYoutube(url);
         } else if (videoObj.type === 'vimeo') {
-            $('.thumb-wrap').html('<iframe src="http://player.vimeo.com/video/' + videoObj.id +'" frameborder="0"></iframe>').addClass('active');
+            $('.thumb-wrap').html('<iframe src="http://player.vimeo.com/video/' + videoObj.id + '" frameborder="0"></iframe>').addClass('active');
             videoTitleVimeo(url);
         } else {
             $('.thumb-wrap').html('<img class="zaglushka" src="img/zaglushka.png" alt="">').removeClass('active');
@@ -113,7 +113,7 @@ $(document).ready(function () {
         min: 0,
         max: 100,
         grid: true,
-        values: [0, 18, 25, 35, 45, 100]
+        values: ["0+", 18, 25, 35, 45, "100+"]
     });
 
     // Calc
@@ -160,7 +160,11 @@ $(document).ready(function () {
     });
 
     $('.categories .title-sec').on('click', function () {
-       $('.show-cat').toggleClass('active');
+        $('.show-cat').toggleClass('active');
+    });
+
+    $('.show-setting  .title-sec').on('click', function () {
+        $('.show-setting').toggleClass('active');
     });
 
     // Loader Page

@@ -598,6 +598,10 @@ main {
   font-size: 14px;
   color: $grayLite;
   margin-top: 5px;
+
+  a {
+    text-decoration: underline;
+  }
 }
 
 .sum-view {
@@ -776,7 +780,7 @@ main {
 
 .plat-wrap {
   background-color: #fff;
-  box-shadow: 0 0 4px rgba(0,0,0,.2);
+  box-shadow: 0 0 4px rgba(0, 0, 0, .2);
   padding: 20px;
   width: 60%;
   margin-top: 20px;
@@ -934,6 +938,193 @@ main {
     opacity: 1;
     z-index: 1;
     transform: scale(1);
+  }
+}
+
+// Go Company--------------------------
+.finish {
+  margin-top: 35px;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 30px 0;
+  box-shadow: 0 1px 27px 0 rgba(0, 0, 1, 0.1)
+}
+
+.preview-video {
+  max-width: 300px;
+  width: 100%;
+
+  img {
+    border-radius: 10px;
+  }
+}
+
+.finish-info {
+  margin-left: 40px;
+  width: 100%;
+
+  .name-video {
+    margin-top: 0;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    position: relative;
+
+    input {
+      position: relative;
+      z-index: 2;
+      font-size: 20px;
+      transition: all .1s linear;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 0;
+      left: -20px;
+      transition: all .5s ease;
+      background-color: #ed5565;
+      border-radius: 5px;
+    }
+
+    &:hover {
+
+      input {
+        color: #FFFFFF;
+      }
+
+      &:before {
+        width: 100vw;
+      }
+    }
+  }
+
+  .sum-def-text {
+    color: #ed5565;
+  }
+}
+
+.finish-btn {
+  padding: 30px 0;
+
+  .desc-notif {
+    width: 100%;
+
+    p {
+      max-width: 350px;
+      font-weight: 300;
+    }
+  }
+
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .next-road {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+// Pay----------------------------------
+.pay-title {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.pay-wrap {
+  margin-top: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.pay-info {
+  margin-left: 40px;
+  padding-top: 10px;
+
+  .sum-view {
+    margin-top: 15px;
+    font-size: 15px;
+  }
+}
+
+.status-pay {
+  font-size: 14px;
+  font-weight: 500;
+  color: $grayLite;
+}
+
+.pay {
+
+  .preview-video {
+    max-width: 200px;
+  }
+}
+
+.show-setting {
+  margin-top: 9px;
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e8e8e8;
+
+  .title-sec{
+    font-size: 14px;
+
+    span {
+      border-bottom: 1px dashed #000;
+      transition: all .2s linear;
+      cursor: pointer;
+
+      &:hover {
+        border-bottom-color: transparent;
+      }
+    }
+
+    i {
+      font-size: 12px;
+      margin-left: 5px;
+      transition: all .1s linear;
+    }
+  }
+
+  .show-set-content {
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    top: 100%;
+    transform: scale(0);
+    transition: all .1s linear;
+  }
+
+  &.active {
+
+    .title-sec i {
+      transform: rotate(180deg);
+    }
+
+    .show-set-content {
+      opacity: 1;
+      z-index: 1;
+      position: static;
+      top: auto;
+      transform: scale(1);
+    }
+  }
+}
+
+.set-card {
+  margin-top: 20px;
+
+  .desc-notif {
+    margin-top: 0;
+  }
+
+  .set-title {
+    font-size: 15px;
   }
 }
 

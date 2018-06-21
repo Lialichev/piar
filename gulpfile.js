@@ -32,6 +32,7 @@ gulp.task('watch', ['browser-sync', 'sass', 'gulp-uglify'], function() {
     gulp.watch('src/scss/**/*.scss', ['sass']);
     gulp.watch('app/*.html', browserSync.reload);
     gulp.watch('src/js/**/*.js', browserSync.reload);
+    gulp.watch('src/js/**/*.js', ['gulp-uglify']);
     gulp.watch('src/scss/**/*.scss', browserSync.reload);
 });
 
