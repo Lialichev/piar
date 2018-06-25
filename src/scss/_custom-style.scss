@@ -340,3 +340,52 @@
   }
 
 }
+
+// table
+.thead {
+  padding: 20px;
+  font-size: 15px;
+  color: $grayLite;
+}
+
+.first-section {
+  width: 35%;
+
+  p {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-right: 10px;
+  }
+
+  i {
+    margin-right: 10px;
+  }
+}
+
+.t-card {
+  padding: 15px 10px;
+  width: 100%;
+  font-weight: 500;
+
+  &:nth-child(2n + 1) {
+    background-color: #dcdfe2;
+  }
+}
+
+.num-user {
+
+  i {
+    margin-right: 10px;
+  }
+}
+
+.second-section {
+  width: 65%;
+}
+
+.change-acc {
+  font-size: 14px;
+  color: $mainColor;
+  margin-right: 30px;
+}

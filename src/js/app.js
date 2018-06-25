@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+    // Loader Page
+    $('#loading').fadeOut(500);
+
     // Partners
     var partner = new Swiper('.swiper-partner', {
         loop: true,
@@ -88,33 +91,39 @@ $(document).ready(function () {
     }
 
     // Tabs
-    $('#createTab').responsiveTabs({
-        startCollapsed: 'accordion'
-    });
+    if ($('*').hasClass('createTab')) {
+        $('#createTab').responsiveTabs({
+            startCollapsed: 'accordion'
+        });
+    }
 
     // Range
-    $("#views").ionRangeSlider({
-        type: "single",
-        min: 0,
-        max: 100000,
-        from: 500,
-        from_min: 500,
-        step: 100,
-        grid: true,
-        grid_num: 10,
-        onChange: function (data) {
-            allSumFirst(data.from);
-        }
-    });
+    if ($('*').hasClass('js-view')) {
+        $("#views").ionRangeSlider({
+            type: "single",
+            min: 0,
+            max: 100000,
+            from: 500,
+            from_min: 500,
+            step: 100,
+            grid: true,
+            grid_num: 10,
+            onChange: function (data) {
+                allSumFirst(data.from);
+            }
+        });
+    }
 
     // Range sex
-    $("#old").ionRangeSlider({
-        type: "double",
-        min: 0,
-        max: 100,
-        grid: true,
-        values: ["0+", 18, 25, 35, 45, "100+"]
-    });
+    if ($('*').hasClass('js-old')) {
+        $("#old").ionRangeSlider({
+            type: "double",
+            min: 0,
+            max: 100,
+            grid: true,
+            values: ["0+", 18, 25, 35, 45, "100+"]
+        });
+    }
 
     // Calc
     $('#desc-area').on('keyup', function () {
@@ -166,8 +175,4 @@ $(document).ready(function () {
     $('.show-setting  .title-sec').on('click', function () {
         $('.show-setting').toggleClass('active');
     });
-
-    // Loader Page
-    $('#loading').fadeOut(500);
-
 });

@@ -173,6 +173,16 @@ header {
   &:hover {
     color: $grayLite;
   }
+
+  &.score {
+    position: relative;
+
+    &:before {
+      content: '/';
+      position: absolute;
+      right: -17px;
+    }
+  }
 }
 
 .dop-balance {
@@ -1125,6 +1135,109 @@ main {
 
   .set-title {
     font-size: 15px;
+  }
+}
+
+// Publisher
+.aside {
+  width: 100%;
+  max-width: 300px;
+  flex-shrink: 0;
+  background-color: #fff;
+  margin-left: 30px;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 27px 0 rgba(0, 0, 1, .1);
+}
+
+.content {
+  width: 100%;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 15px;
+  box-shadow: 0 1px 27px 0 rgba(0, 0, 1, .1);
+}
+
+.statistics {
+  padding-bottom: 20px;
+
+  .stat-card {
+
+    & + .stat-card {
+      margin-top: 15px;
+    }
+
+    .stat-num {
+      font-size: 25px;
+      color: $mainColor;
+      font-weight: 500;
+    }
+
+    .stat-desc {
+      font-size: 14px;
+      color: #252525;
+    }
+  }
+}
+
+.news {
+  padding: 20px 0;
+  border-top: 1px solid $grayLite;
+
+  .news-card {
+
+    .news-date {
+      color: $grayLite;
+      font-size: 14px;
+    }
+
+    .news-text {
+      color: #252525;
+      font-size: 15px;
+      margin-top: 5px;
+    }
+
+    & + .news-card {
+      margin-top: 20px;
+    }
+  }
+}
+
+.title-pub {
+  font-size: 30px;
+}
+
+.def-link {
+  font-size: 15px;
+  color: $grayLite;
+}
+
+.card-add-plat {
+  margin-top: 30px;
+
+  .radio__text:after {
+    top: 6px;
+  }
+
+  .radio__text {
+    color: #000;
+    font-size: 18px;
+  }
+
+  .radio__text:before {
+    top: 2px;
+  }
+}
+
+.select-add {
+  flex-wrap: wrap;
+  max-width: 500px;
+  width: 100%;
+  margin-top: 15px;
+
+  .radio {
+    width: 50%;
+    margin-top: 10px;
   }
 }
 
