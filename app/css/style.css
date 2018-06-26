@@ -137,6 +137,13 @@ button {
           align-items: center;
 }
 
+.align-start {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .vertical-middle {
   vertical-align: middle;
 }
@@ -927,6 +934,10 @@ main {
   text-align: center;
 }
 
+.form-card .soc-card + .soc-card {
+  margin-left: 15px;
+}
+
 .form-card .soc-desc {
   margin-top: 20px;
   text-align: center;
@@ -967,7 +978,30 @@ main {
   margin-top: 10px;
 }
 
-.form-card .soc-card {
+.form-card .input-wrap {
+  margin-top: 30px;
+}
+
+.form-card .input-wrap input + input {
+  margin-top: 30px;
+}
+
+.form-card .forgot-pass {
+  color: gray;
+  margin-top: 15px;
+}
+
+.form-card .forgot-pass a {
+  text-decoration: underline;
+  color: #2f3337;
+}
+
+.form-card .btn-wrap {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.soc-card {
   height: 40px;
   width: 40px;
   -webkit-border-radius: 20px;
@@ -990,48 +1024,21 @@ main {
   transition: all .2s linear;
 }
 
-.form-card .soc-card i {
+.soc-card i {
   font-size: 18px;
   -webkit-transition: all .1s linear;
   -o-transition: all .1s linear;
   transition: all .1s linear;
 }
 
-.form-card .soc-card + .soc-card {
-  margin-left: 15px;
-}
-
-.form-card .soc-card:hover {
+.soc-card:hover {
   border: 2px solid #4274f4;
 }
 
-.form-card .soc-card:hover i {
+.soc-card:hover i {
   -webkit-transform: scale(1.2);
       -ms-transform: scale(1.2);
           transform: scale(1.2);
-}
-
-.form-card .input-wrap {
-  margin-top: 30px;
-}
-
-.form-card .input-wrap input + input {
-  margin-top: 30px;
-}
-
-.form-card .forgot-pass {
-  color: gray;
-  margin-top: 15px;
-}
-
-.form-card .forgot-pass a {
-  text-decoration: underline;
-  color: #2f3337;
-}
-
-.form-card .btn-wrap {
-  margin-top: 50px;
-  text-align: center;
 }
 
 .partner {
@@ -1984,6 +1991,110 @@ main {
 .select-add .radio {
   width: 50%;
   margin-top: 10px;
+}
+
+.set-email {
+  margin-top: 50px;
+}
+
+.set-email .desc-notif {
+  margin-top: 10px;
+}
+
+.your-email {
+  padding: 10px 20px;
+  display: inline-block;
+  background-color: #4274f4;
+  color: #FFFFFF;
+  margin-top: 10px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.set-notif {
+  margin-top: 50px;
+}
+
+.set-notif .checkbox {
+  margin-top: 20px;
+  display: block;
+}
+
+.set-notif .checkbox__text {
+  color: #2f3337;
+}
+
+.set-phone {
+  margin-top: 50px;
+}
+
+.set-phone .desc-notif {
+  margin-top: 10px;
+}
+
+.set-phone .set-tel {
+  max-width: 400px;
+  margin-top: 10px;
+}
+
+.set-phone .set-tel .btn {
+  margin-left: 30px;
+}
+
+.set-social {
+  margin-top: 50px;
+}
+
+.set-social .desc-notif {
+  margin-top: 10px;
+}
+
+.set-social .social-enter {
+  margin-top: 10px;
+}
+
+.set-social .soc-card + .soc-card {
+  margin-left: 15px;
+}
+
+.set-pass {
+  margin-top: 50px;
+}
+
+.set-pass .inp-set {
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.set-pass .inp-set + .inp-set {
+  margin-top: 15px;
+}
+
+.set-pass .btn {
+  margin-top: 15px;
+}
+
+.del-acc {
+  margin-top: 50px;
+}
+
+.del-acc .btn {
+  margin-top: 20px;
+}
+
+.soc-manager {
+  margin-top: 15px;
+}
+
+.man-card i {
+  font-size: 20px;
+  width: 35px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.man-card + .man-card {
+  margin-top: 15px;
 }
 
 footer {

@@ -283,6 +283,10 @@ main {
     text-align: center;
   }
 
+  .soc-card + .soc-card {
+    margin-left: 15px;
+  }
+
   .soc-desc {
     margin-top: 20px;
     text-align: center;
@@ -319,34 +323,6 @@ main {
     margin-top: 10px;
   }
 
-  .soc-card {
-    height: 40px;
-    width: 40px;
-    border-radius: 20px;
-    border: 2px solid #000000;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all .2s linear;
-
-    i {
-      font-size: 18px;
-      transition: all .1s linear;
-    }
-
-    & + .soc-card {
-      margin-left: 15px;
-    }
-
-    &:hover {
-      border: 2px solid $mainColor;
-
-      i {
-        transform: scale(1.2);
-      }
-    }
-  }
-
   .input-wrap {
     margin-top: 30px;
 
@@ -368,6 +344,30 @@ main {
   .btn-wrap {
     margin-top: 50px;
     text-align: center;
+  }
+}
+
+.soc-card {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: 2px solid #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .2s linear;
+
+  i {
+    font-size: 18px;
+    transition: all .1s linear;
+  }
+
+  &:hover {
+    border: 2px solid $mainColor;
+
+    i {
+      transform: scale(1.2);
+    }
   }
 }
 
@@ -1238,6 +1238,113 @@ main {
   .radio {
     width: 50%;
     margin-top: 10px;
+  }
+}
+
+// Setting----------------------------------
+.set-email {
+  margin-top: 50px;
+
+  .desc-notif {
+    margin-top: 10px;
+  }
+}
+
+.your-email {
+  padding: 10px 20px;
+  display: inline-block;
+  background-color: $mainColor;
+  color: #FFFFFF;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.set-notif {
+  margin-top: 50px;
+
+  .checkbox {
+    margin-top: 20px;
+    display: block;
+
+    &__text {
+      color: #2f3337;
+    }
+  }
+}
+
+.set-phone {
+  margin-top: 50px;
+
+  .desc-notif {
+    margin-top: 10px;
+  }
+
+  .set-tel {
+    max-width: 400px;
+    margin-top: 10px;
+
+    .btn {
+      margin-left: 30px;
+    }
+  }
+}
+
+.set-social {
+  margin-top: 50px;
+
+  .desc-notif {
+    margin-top: 10px;
+  }
+
+  .social-enter {
+    margin-top: 10px;
+  }
+
+  .soc-card + .soc-card {
+    margin-left: 15px;
+  }
+}
+
+.set-pass {
+  margin-top: 50px;
+
+  .inp-set {
+    max-width: 400px;
+    margin-top: 20px;
+
+    & + .inp-set {
+      margin-top: 15px;
+    }
+  }
+
+  .btn {
+    margin-top: 15px;
+  }
+}
+
+.del-acc {
+  margin-top: 50px;
+
+  .btn {
+    margin-top: 20px;
+  }
+}
+
+.soc-manager {
+  margin-top: 15px;
+}
+
+.man-card {
+
+  i {
+    font-size: 20px;
+    width: 35px;
+    text-align: center;
+    margin-right: 10px;
+  }
+
+  & + .man-card {
+    margin-top: 15px;
   }
 }
 

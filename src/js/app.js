@@ -175,4 +175,9 @@ $(document).ready(function () {
     $('.show-setting  .title-sec').on('click', function () {
         $('.show-setting').toggleClass('active');
     });
+
+    // Tel mask
+    if ($('*').hasClass('mask-input')) {
+        $(".mask-input").mask("+380 (99) 999-9999");
+    }
 });
