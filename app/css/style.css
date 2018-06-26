@@ -1080,7 +1080,8 @@ main {
   margin-top: 20px;
 }
 
-.link-video {
+.link-video,
+.theme-help {
   padding: 15px 30px;
   background-color: #fff;
   -webkit-border-radius: 5px;
@@ -1091,36 +1092,75 @@ main {
   transition: all .2s linear;
 }
 
-.link-video input.link-v {
+.link-video input.link-v,
+.theme-help input.link-v {
   font-size: 16px;
   padding: 5px 0;
   color: #606366;
   border: none;
 }
 
-.link-video input.link-v::-webkit-input-placeholder {
+.link-video input.link-v::-webkit-input-placeholder,
+.theme-help input.link-v::-webkit-input-placeholder {
   color: #606366;
 }
 
-.link-video input.link-v::-moz-placeholder {
+.link-video input.link-v::-moz-placeholder,
+.theme-help input.link-v::-moz-placeholder {
   color: #606366;
 }
 
-.link-video input.link-v:-ms-input-placeholder {
+.link-video input.link-v:-ms-input-placeholder,
+.theme-help input.link-v:-ms-input-placeholder {
   color: #606366;
 }
 
-.link-video input.link-v::-ms-input-placeholder {
+.link-video input.link-v::-ms-input-placeholder,
+.theme-help input.link-v::-ms-input-placeholder {
   color: #606366;
 }
 
-.link-video input.link-v::placeholder {
+.link-video input.link-v::placeholder,
+.theme-help input.link-v::placeholder {
   color: #606366;
 }
 
-.link-video:hover {
+.link-video:hover,
+.theme-help:hover {
   -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.theme-help {
+  margin-top: 20px;
+  padding: 5px 10px;
+}
+
+.theme-help input {
+  font-size: 16px;
+  padding: 5px 0;
+  color: #606366;
+  border: none;
+}
+
+.theme-help input::-webkit-input-placeholder {
+  color: #606366;
+}
+
+.theme-help input::-moz-placeholder {
+  color: #606366;
+}
+
+.theme-help input:-ms-input-placeholder {
+  color: #606366;
+}
+
+.theme-help input::-ms-input-placeholder {
+  color: #606366;
+}
+
+.theme-help input::placeholder {
+  color: #606366;
 }
 
 .name-video {
@@ -2095,6 +2135,31 @@ main {
 
 .man-card + .man-card {
   margin-top: 15px;
+}
+
+.helper-sms {
+  margin-top: 15px;
+}
+
+.helper-file {
+  font-size: 14px;
+  border: none;
+}
+
+.helper-file:hover {
+  border: none;
+}
+
+.helper-btn {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 footer {

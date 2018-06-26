@@ -403,7 +403,8 @@ main {
 }
 
 // Pub-create --------------------------
-.link-video {
+.link-video,
+.theme-help {
   padding: 15px 30px;
   background-color: #fff;
   border-radius: 5px;
@@ -423,6 +424,22 @@ main {
 
   &:hover {
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, .2);
+  }
+}
+
+.theme-help {
+  margin-top: 20px;
+  padding: 5px 10px;
+
+  input {
+    font-size: 16px;
+    padding: 5px 0;
+    color: #606366;
+    border: none;
+
+    &::placeholder {
+      color: #606366;
+    }
   }
 }
 
@@ -1081,7 +1098,7 @@ main {
   padding-bottom: 10px;
   border-bottom: 1px solid #e8e8e8;
 
-  .title-sec{
+  .title-sec {
     font-size: 14px;
 
     span {
@@ -1346,6 +1363,25 @@ main {
   & + .man-card {
     margin-top: 15px;
   }
+}
+
+.helper-sms {
+  margin-top: 15px;
+}
+
+.helper-file {
+  font-size: 14px;
+  border: none;
+
+  &:hover {
+    border: none;
+  }
+}
+
+.helper-btn {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 // Footer ------------------------------
