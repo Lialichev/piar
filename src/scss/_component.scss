@@ -1231,6 +1231,8 @@ main {
 
 .card-add-plat {
   margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ebebeb;
 
   .radio__text:after {
     top: 6px;
@@ -1258,6 +1260,149 @@ main {
   }
 }
 
+.add-plat-result {
+  padding-top: 30px;
+}
+
+.form-site {
+  max-width: 400px;
+  display: none;
+
+  .btn {
+    margin-top: 20px;
+  }
+}
+
+.add-site {
+
+  i {
+    width: 20px;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+  & + .add-site {
+    margin-top: 10px;
+  }
+
+  span, a {
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &.active {
+
+    .form-site {
+      display: block;
+    }
+  }
+}
+
+.res-card {
+  margin-top: 20px;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.auth {
+  background-color: #999999;
+  color: #fff;
+  width: fit-content;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  border: 1px solid transparent;
+
+  .icon-auth {
+    margin-right: 5px;
+    width: 20px;
+    text-align: center;
+  }
+
+  &:hover {
+    color: #FFFFFF;
+    border: 1px solid $grayLite;
+  }
+}
+
+.theme-help.telegram {
+  max-width: 400px;
+}
+
+.btn.telegram {
+  margin-top: 10px;
+}
+
+.comp-card {
+  position: relative;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #eeeeee;
+  margin-top: 15px;
+
+  .company-img {
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+    flex-shrink: 0;
+
+    img {
+      border-radius: 5px;
+    }
+
+    .btn {
+      margin-top: 10px;
+    }
+  }
+
+  .comp-content {
+    margin-left: 30px;
+    width: 100%;
+
+    .title-sec {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      max-width: 450px;
+    }
+  }
+
+  .price-c {
+    font-size: 20px;
+    font-weight: 500;
+
+    &.cus {
+      color: $customColor;
+    }
+  }
+}
+
+.progress {
+  position: relative;
+  text-align: center;
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $customColor;
+    font-weight: 500;
+  }
+}
+
+.comp-platforms {
+  padding: 5px 15px;
+  background-color: $customColor;
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 14px;
+}
 // Setting----------------------------------
 .set-email {
   margin-top: 50px;

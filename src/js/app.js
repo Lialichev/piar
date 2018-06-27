@@ -180,4 +180,27 @@ $(document).ready(function () {
     if ($('*').hasClass('mask-input')) {
         $(".mask-input").mask("+380 (99) 999-9999");
     }
+
+    // Add Site
+    $('.js-add-site').on('click', function (e) {
+        e.preventDefault();
+       $(this).closest('.add-site').toggleClass('active')
+    });
+
+    //create platforms
+    $('.select-add .radio').on('click', function () {
+        var i = $(this).index();
+        $('.add-plat-result .res-card').removeClass('active').eq(i).addClass('active');
+    })
+
+    // Progress
+    $('.progress').circleProgress({
+        value: 0.75,
+        size: 100,
+        fill: {
+            gradient: ["#4274f4", "#ed5565"]
+        }
+    }).on('circle-animation-progress', function(event, progress, stepValue) {
+        $(this).find('span').text(stepValue.toFixed(2).substr(2) + "%");
+    });
 });

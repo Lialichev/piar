@@ -137,6 +137,14 @@ button {
           align-items: center;
 }
 
+.flex-d-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .align-start {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
@@ -2004,6 +2012,8 @@ main {
 
 .card-add-plat {
   margin-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ebebeb;
 }
 
 .card-add-plat .radio__text:after {
@@ -2031,6 +2041,151 @@ main {
 .select-add .radio {
   width: 50%;
   margin-top: 10px;
+}
+
+.add-plat-result {
+  padding-top: 30px;
+}
+
+.form-site {
+  max-width: 400px;
+  display: none;
+}
+
+.form-site .btn {
+  margin-top: 20px;
+}
+
+.add-site i {
+  width: 20px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.add-site + .add-site {
+  margin-top: 10px;
+}
+
+.add-site span:hover, .add-site a:hover {
+  text-decoration: underline;
+}
+
+.add-site.active .form-site {
+  display: block;
+}
+
+.res-card {
+  margin-top: 20px;
+  display: none;
+}
+
+.res-card.active {
+  display: block;
+}
+
+.auth {
+  background-color: #999999;
+  color: #fff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 10px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  font-size: 18px;
+  border: 1px solid transparent;
+}
+
+.auth .icon-auth {
+  margin-right: 5px;
+  width: 20px;
+  text-align: center;
+}
+
+.auth:hover {
+  color: #FFFFFF;
+  border: 1px solid #707070;
+}
+
+.theme-help.telegram {
+  max-width: 400px;
+}
+
+.btn.telegram {
+  margin-top: 10px;
+}
+
+.comp-card {
+  position: relative;
+  padding: 15px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  background-color: #eeeeee;
+  margin-top: 15px;
+}
+
+.comp-card .company-img {
+  width: 100%;
+  max-width: 200px;
+  text-align: center;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+
+.comp-card .company-img img {
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+}
+
+.comp-card .company-img .btn {
+  margin-top: 10px;
+}
+
+.comp-card .comp-content {
+  margin-left: 30px;
+  width: 100%;
+}
+
+.comp-card .comp-content .title-sec {
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 450px;
+}
+
+.comp-card .price-c {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.comp-card .price-c.cus {
+  color: #ed5565;
+}
+
+.progress {
+  position: relative;
+  text-align: center;
+}
+
+.progress span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #ed5565;
+  font-weight: 500;
+}
+
+.comp-platforms {
+  padding: 5px 15px;
+  background-color: #ed5565;
+  color: #FFFFFF;
+  display: inline-block;
+  font-size: 14px;
 }
 
 .set-email {
