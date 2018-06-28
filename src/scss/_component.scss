@@ -1403,6 +1403,85 @@ main {
   display: inline-block;
   font-size: 14px;
 }
+
+.filter-comp {
+  padding: 20px;
+  justify-content: flex-end;
+}
+
+.filter-card {
+
+  & + .filter-card {
+    margin-left: 20px;
+  }
+
+  .nice-select {
+    float: none;
+    clear: none;
+    display: inline-block;
+  }
+}
+
+.filter-stats {
+  padding: 20px;
+
+  .theme-help {
+    margin-top: 0;
+    padding: 6.5px 10px;
+    margin-left: 20px;
+    max-width: 100px;
+
+    input,
+    input::placeholder{
+      font-size: 14px;
+      color: #2f3337;
+    }
+  }
+}
+
+// Referrals Page---------------------------
+.referrals-wrap {
+  margin-top: 30px;
+}
+
+.ref-link-wrap {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+
+  input {
+    border: none;
+    font-size: 14px;
+    color: $customColor;
+  }
+}
+
+.copy {
+  height: 30px;
+  width: 30px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 2px solid $customColor;
+  color: $customColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  margin-right: 15px;
+  transition: all .1s linear;
+
+  &:hover {
+    border: 2px solid $mainColor;
+    color: #fff;
+    background-color: $mainColor;
+  }
+}
+
+.ref-stat {
+  margin-top: 10px;
+}
+
 // Setting----------------------------------
 .set-email {
   margin-top: 50px;
@@ -1674,7 +1753,7 @@ footer {
   padding: 30px;
   background-color: #fff;
   border: 1px solid rgba(96, 99, 102, 0.29);
-  border-radius: 30px;
+  border-radius: 10px;
   align-items: center;
   box-shadow: 0 3px 22px rgba(0, 0, 0, 0.25);
   display: flex;

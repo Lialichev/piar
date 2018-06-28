@@ -184,7 +184,7 @@ $(document).ready(function () {
     // Add Site
     $('.js-add-site').on('click', function (e) {
         e.preventDefault();
-       $(this).closest('.add-site').toggleClass('active')
+        $(this).closest('.add-site').toggleClass('active')
     });
 
     //create platforms
@@ -194,13 +194,32 @@ $(document).ready(function () {
     })
 
     // Progress
-    $('.progress').circleProgress({
-        value: 0.75,
-        size: 100,
-        fill: {
-            gradient: ["#4274f4", "#ed5565"]
-        }
-    }).on('circle-animation-progress', function(event, progress, stepValue) {
-        $(this).find('span').text(stepValue.toFixed(2).substr(2) + "%");
+    if ($('*').hasClass('progress')) {
+        $('.progress').circleProgress({
+            value: 0.75,
+            size: 100,
+            fill: {
+                gradient: ["#4274f4", "#ed5565"]
+            }
+        }).on('circle-animation-progress', function (event, progress, stepValue) {
+            $(this).find('span').text(stepValue.toFixed(2).substr(2) + "%");
+        });
+    }
+
+    // Select Filter
+    if ($('*').hasClass('filters')) {
+        $('.filters').niceSelect();
+    }
+
+    // Datepicker
+    if ($('*').hasClass('date-stat')) {
+        $('.date-stat').datepicker();
+    }
+
+    // Copy
+    $('.copy').on('click', function () {
+        $('.link-ref').select();
+        document.execCommand('copy');
+        alertShow($('.alert[data-answer="successful"]'));
     });
 });
