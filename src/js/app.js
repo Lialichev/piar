@@ -11,6 +11,11 @@ $(document).ready(function () {
         autoplay: {
             delay: 2500,
             disableOnInteraction: false
+        },
+        breakpoints: {
+            599: {
+                slidesPerView: 3
+            }
         }
     });
 
@@ -221,5 +226,14 @@ $(document).ready(function () {
         $('.link-ref').select();
         document.execCommand('copy');
         alertShow($('.alert[data-answer="successful"]'));
+    });
+
+    // Burger
+    $('.burger-nav').on('click', function () {
+       $('.nav').addClass('active');
+
+       $('.exit-mob').on('click', function () {
+           $('.nav').removeClass('active');
+       });
     });
 });

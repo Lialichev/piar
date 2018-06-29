@@ -770,6 +770,32 @@ header .btn.btn-def {
   display: inline-block;
   width: 200px;
   margin-right: auto;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+}
+
+.burger-nav {
+  display: none;
+  cursor: pointer;
+}
+
+.burger-nav span {
+  display: block;
+  height: 2px;
+  width: 20px;
+  background-color: #000000;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  margin-top: 3px;
+}
+
+.exit-mob {
+  position: absolute;
+  display: none;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
 }
 
 .num-phone {

@@ -1,0 +1,84 @@
+@media only screen and (max-width: 991px){
+  // Footer
+  .contacts {
+    margin: 20px 40px 0;
+  }
+
+  .center-footer {
+    flex-wrap: wrap;
+  }
+
+  .info-company {
+    margin-top: 20px;
+  }
+
+  .burger-nav {
+    display: block;
+  }
+
+  .nav {
+    position: absolute;
+    top: 0;
+    padding: 15px;
+    background-color: #fff;
+    flex-direction: column;
+    right: 0;
+    box-shadow: 0 0 5px #cacbcc;
+    opacity: 0;
+    transition: all .2s linear;
+    transform: scale(0) translateY(-100%);
+    z-index: -1;
+
+    & > * {
+      margin-top: 15px;
+    }
+
+    &.active {
+      opacity: 1;
+      transform: scale(1) translateY(0);
+      z-index: 9999999;
+    }
+  }
+
+  header .btn.btn-def {
+    margin-left: 0;
+  }
+
+  .entrance {
+    margin-left: 0;
+  }
+
+  .exit-mob {
+    display: block;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 599px){
+  // Footer
+  .center-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-company {
+    text-align: center;
+  }
+  
+  .top-footer {
+    flex-direction: column;
+
+    .logo {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+  .partner {
+    margin-top: 50px;
+  }
+
+  footer {
+    margin-top: 20px;
+  }
+}
