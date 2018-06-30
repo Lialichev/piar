@@ -180,7 +180,7 @@ header {
   transition: .1s;
 
   & + .header-nav {
-    margin-left: 30px;
+    margin-left: 20px;
   }
 
   &.create-company {
@@ -463,6 +463,17 @@ main {
     &::placeholder {
       color: #606366;
     }
+  }
+}
+
+.soc-cards + .soc-cards {
+  margin-left: 20px;
+}
+
+.soc-cards {
+
+  .desc-notif {
+    text-align: center;
   }
 }
 
@@ -1385,7 +1396,7 @@ main {
 
   .comp-content {
     margin-left: 30px;
-    width: 100%;
+    width: 62%;
 
     .title-sec {
       white-space: nowrap;
@@ -1455,7 +1466,7 @@ main {
     max-width: 100px;
 
     input,
-    input::placeholder{
+    input::placeholder {
       font-size: 14px;
       color: #2f3337;
     }
@@ -1655,6 +1666,7 @@ main {
 
 .comp-img {
   width: 200px;
+  flex-shrink: 0;
 }
 
 .comp-text {
@@ -1668,6 +1680,7 @@ main {
 
 .comp-go {
   margin-left: auto;
+  flex-shrink: 0;
 }
 
 .exit-comp {

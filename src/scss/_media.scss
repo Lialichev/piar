@@ -1,4 +1,9 @@
-@media only screen and (max-width: 991px){
+@media only screen and (max-width: 991px) {
+
+  .header-nav.score:before {
+    display: none;
+  }
+
   // Footer
   .contacts {
     margin: 20px 40px 0;
@@ -12,6 +17,7 @@
     margin-top: 20px;
   }
 
+  // Header
   .burger-nav {
     display: block;
   }
@@ -26,7 +32,7 @@
     box-shadow: 0 0 5px #cacbcc;
     opacity: 0;
     transition: all .2s linear;
-    transform: scale(0) translateY(-100%);
+    transform: translateY(-100%);
     z-index: -1;
 
     & > * {
@@ -35,7 +41,7 @@
 
     &.active {
       opacity: 1;
-      transform: scale(1) translateY(0);
+      transform: translateY(0);
       z-index: 9999999;
     }
   }
@@ -52,9 +58,351 @@
     display: block;
     margin-top: 0;
   }
+
+  .header-nav + .header-nav {
+    margin-left: 0;
+  }
+
+  .tab-text {
+    font-size: 14px;
+  }
+
+  .countries-select .checkbox {
+    width: 24%;
+  }
+
+  .road-card .name-road {
+    font-size: 16px;
+  }
+
+  .company-card + .company-card {
+    margin-top: 0;
+  }
+
+  .company-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .company-card {
+      width: 49%;
+      margin-top: 15px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .comp-text {
+      margin-left: 0;
+    }
+
+    .comp-img {
+      max-width: 200px;
+      width: 100%;
+    }
+
+    .comp-go {
+      margin-left: 0;
+      margin-top: 15px;
+    }
+  }
+
+  .def-section {
+
+    .container{
+      flex-direction: column;
+    }
+
+    .aside {
+      max-width: 100%;
+      margin-left: 0;
+      margin-top: 15px;
+    }
+  }
 }
 
-@media only screen and (max-width: 599px){
+@media only screen and (max-width: 767px) {
+
+  .comp-card {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .comp-card .comp-content {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .comp-card .company-img {
+    max-width: 400px;
+    margin-bottom: 15px;
+  }
+
+  .video {
+    width: 100%;
+  }
+
+  .tabs-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .tab-content {
+    width: 100%;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+
+  .go-btn .desc-btn {
+    padding: 0;
+  }
+
+  .road-info .sum-view {
+    order: -1;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-left: 0;
+  }
+
+  .sex-and-old .old {
+    width: 100%;
+  }
+
+  .road-info {
+
+    .container {
+      flex-wrap: wrap;
+    }
+  }
+
+  .countries-select .checkbox {
+    width: 30%;
+  }
+
+  .finish-wrap {
+    flex-direction: column;
+  }
+
+  .finish-info {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .finish-info .name-video input {
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+
+  .alert {
+    left: 10px;
+    right: 10px;
+    width: auto;
+  }
+
+  .filter-stats {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filter-stats .theme-help {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+
+  .select-add .radio {
+    width: 100%;
+  }
+
+  .comp-card .comp-content .title-sec {
+    max-width: 100%;
+    overflow: visible;
+    white-space: normal;
+    text-overflow: clip;
+  }
+
+  .comp-stat {
+    flex-direction: column;
+    margin-bottom: 15px;
+
+    & > * {
+      margin-top: 15px;
+    }
+  }
+
+  .comp-platforms {
+    font-size: 13px;
+  }
+
+  .filter-card + .filter-card {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .filter-comp {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .t-card {
+    flex-direction: column;
+  }
+
+  .first-section {
+    width: 100%;
+  }
+
+  .second-section {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .more-info-plat {
+    margin-top: 10px;
+  }
+
+  .table-pub {
+    margin-top: 30px;
+  }
+
+  .thead {
+    display: none;
+  }
+
+  .title-pub.flex-cont {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .def-link {
+      margin-top: 10px;
+    }
+  }
+
+  .set-tel {
+    flex-wrap: wrap;
+  }
+
+  .set-phone .set-tel .btn {
+    margin-top: 15px;
+    margin-left: 0;
+  }
+
+  .company-wrap .company-card {
+    width: 100%;
+  }
+
+  .categories-wrap .checkbox {
+    width: 100%;
+  }
+
+  .pay-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pay-info {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .plat-wrap {
+    width: 100%;
+  }
+
+  .soc-cards + .soc-cards {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .more-info-soc {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .soc-cards .desc-notif {
+    text-align: left;
+  }
+
+  .countries-select .checkbox {
+    width: 100%;
+  }
+
+  .road-card i {
+    font-size: 15px;
+  }
+
+  .road-to-create .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .road-card + .road-card {
+    margin-top: 10px;
+  }
+
+  .road-info {
+
+    .btn {
+      font-size: 14px;
+      padding: 5px;
+      height: 40px;
+    }
+  }
+
+  .next-road {
+    margin-left: 10px;
+  }
+
+  .btn.btn-target i {
+    margin-right: 10px;
+  }
+
+  .btn.btn-fast i {
+    margin-left: 10px;
+  }
+
+  .go-btn {
+
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .target {
+      margin-top: 30px;
+    }
+  }
+
+  .go-btn .fast-start, .go-btn .target {
+    width: 90%;
+  }
+
+  .thumb-wrap .zaglushka {
+    width: 100px;
+  }
+
+  .link-video, .theme-help {
+    padding: 10px;
+  }
+
+  .link-video input.link-v, .theme-help input.link-v {
+    font-size: 14px;
+  }
+
+  .desc-for-video .desc-title {
+    flex-wrap: wrap;
+  }
+
+  .sum-view {
+    font-size: 18px;
+  }
+
+  .name-video {
+    padding: 5px 10px;
+  }
+
   // Footer
   .center-footer {
     flex-direction: column;
@@ -64,7 +412,7 @@
   .info-company {
     text-align: center;
   }
-  
+
   .top-footer {
     flex-direction: column;
 
@@ -80,5 +428,9 @@
 
   footer {
     margin-top: 20px;
+  }
+
+  .form-card {
+    padding: 20px 15px;
   }
 }

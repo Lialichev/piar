@@ -823,7 +823,7 @@ header .btn.btn-def {
 }
 
 .header-nav + .header-nav {
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .header-nav.create-company {
@@ -1195,6 +1195,14 @@ main {
 
 .theme-help input::placeholder {
   color: #606366;
+}
+
+.soc-cards + .soc-cards {
+  margin-left: 20px;
+}
+
+.soc-cards .desc-notif {
+  text-align: center;
 }
 
 .name-video {
@@ -2170,7 +2178,7 @@ main {
 
 .comp-card .comp-content {
   margin-left: 30px;
-  width: 100%;
+  width: 62%;
 }
 
 .comp-card .comp-content .title-sec {
@@ -2484,6 +2492,9 @@ main {
 
 .comp-img {
   width: 200px;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
 }
 
 .comp-text {
@@ -2497,6 +2508,9 @@ main {
 
 .comp-go {
   margin-left: auto;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
 }
 
 .exit-comp {
